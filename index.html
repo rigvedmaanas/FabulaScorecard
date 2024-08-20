@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fabula Scoreboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" media="all" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      $.getJSON("./TestSchoolData/New_list-2024.json", function (json) {
+        data = json;
+        $(document).ready(function () {
+          var html =
+            '<h1>FABULA SCORECARD</h1>\n<div style="style="overflow-x:auto;"">\n<table>';
+          html += "<tr>";
+          var flag = 0;
+          $.each(data[0], function (index, value) {
+            html += "<th>" + index + "</th>";
+          });
+          html += "</tr>";
+          $.each(data, function (index, value) {
+            html += "<tr>";
+            $.each(value, function (index2, value2) {
+              html += "<td>" + value2 + "</td>";
+            });
+            html += "<tr>";
+          });
+          html += "</table>\n</div>";
+          $("body").html(html);
+        }); // this will show the info it in firebug console
+      });
+    </script>
+  </body>
+</html>
