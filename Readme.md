@@ -1,3 +1,9 @@
+# Fabula Scorecard
+
+1. Install all the dependencies
+2. Follow the check list
+3. Remember to create an ngrok account for web scoreboard. (The current url will not work for anyone else except me)
+
 # Check List
 
 - Open The Whole Fabula Scoreboard folder in PyCharm and VSCode
