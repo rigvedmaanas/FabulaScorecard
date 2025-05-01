@@ -2,7 +2,7 @@
 
 This is the official repo for the scorecard displayed in front of the registration counter at Rajagiri HSS for Fabula Interschool competition (2022, 2023, 2024).
 
-## What does it do?
+## Features
 - Display scores of schools registered for the competition (more than 100)
 - Show flash message for instant announcement
 - Backend dashboard for updating scores and flash message
