@@ -1,6 +1,6 @@
 # Fabula Scorecard
 
-This is the official repo for the scorecard displayed in front of the registration counter at Rajagiri HSS.
+This is the official repo for the scorecard displayed in front of the registration counter at Rajagiri HSS for Fabula (2022, 2023, 2024).
 
 ## What does it do?
 - Display scores of schools registered for the competition (more than 100)
