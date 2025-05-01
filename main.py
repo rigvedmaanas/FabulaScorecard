@@ -441,6 +441,8 @@ if d[2]["Show Participants Only"]:
 elif not d[2]["Show Participants Only"]:
     show_participants(False)
 #show_leading()
+
+print("Fabula Scorecard.. Built with <3 Rigved Maanas")
 root.mainloop()
 
 
