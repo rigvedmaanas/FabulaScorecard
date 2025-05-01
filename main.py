@@ -1,3 +1,5 @@
+# Built with <3 by Rigved Maanas.
+
 import itertools
 import time
 from customtkinter import *
