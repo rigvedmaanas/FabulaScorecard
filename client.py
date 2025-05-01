@@ -366,5 +366,5 @@ score = Spinbox(change_scoreboard_frame, height=50)
 score.pack(padx=10, pady=(0, 10), fill="x")
 Register_btn = CTkButton(change_scoreboard_frame, text="Update Scoreboard", height=50, font=("Chakra Petch", 30), command=lambda : change_score(School_dropdown.get(), score.get()))
 Register_btn.pack(padx=10, pady=(0, 10), fill="x")
-
+print("Fabula Scorecard.. Built with <3 Rigved Maanas")
 root.mainloop()
