@@ -1,3 +1,5 @@
+# Built with <3 by Rigved Maanas.
+
 from customtkinter import *
 from tkinter import messagebox
 import csv
